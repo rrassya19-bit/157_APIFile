@@ -5,3 +5,4 @@ const komikController = require("../controller/komikController");
 const genreController = require("../controller/genreController");
 const authMiddleware = require("../middleware/authMiddleware");
 
+router.post("/register", penulisController.register);
