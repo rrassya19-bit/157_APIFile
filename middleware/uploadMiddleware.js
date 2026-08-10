@@ -11,3 +11,19 @@ const storage = multer.diskStorage({
         cb(null, uniqueName);
     }
 });
+
+const fileFilter = (req, file, cb) => {
+    const allowedTypes = /jpg|jpeg|png/;
+
+    const extname = allowedTypes.test(
+        path.extname(file.originalname).toLowerCase()
+    );
+
+    const mimetype = allowedTypes.test(file.mimetype);
+
+    if (extname && mimetype) {
+        cb(null, true);
+    } else {
+        cb(new Error("Hanya file JPG, JPEG, dan PNG yang diperbolehkan."));
+    }
+};
