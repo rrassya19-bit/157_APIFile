@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: true
         },
         penulis_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
         }
     }, {

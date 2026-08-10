@@ -121,7 +121,7 @@ async function update(req, res) {
 
         const gambar = req.file
             ? req.file.filename
-            : null;
+            : komik.gambar;
 
         await komik.update({
             judul,
