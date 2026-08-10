@@ -1738,8 +1738,8 @@ Proyek ini dibuat untuk pembelajaran **Pengembangan Web Servis (Pertemuan 11 —
 |------------|--------|
 | **Mata Kuliah** | Pengembangan Web Servis — Pertemuan 11 |
 | **Materi** | Membangun RESTful API dengan Express, Sequelize, JWT, dan Upload File (Multer) |
-| **Nama** | *(tulis nama Anda di sini)* |
-| **NIM** | *(tulis NIM Anda di sini)* |
+| **Nama** | *AHMAD RASSYA MAULANA* |
+| **NIM** | *20250140157* |
 
 ---
 
