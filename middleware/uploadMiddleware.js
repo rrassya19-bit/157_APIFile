@@ -27,3 +27,13 @@ const fileFilter = (req, file, cb) => {
         cb(new Error("Hanya file JPG, JPEG, dan PNG yang diperbolehkan."));
     }
 };
+
+const upload = multer({
+    storage: storage,
+    fileFilter: fileFilter,
+    limits: { 
+        fileSize: 5 * 1024 * 1024 // Batas ukuran file 5MB
+    } 
+});
+
+module.exports = upload;
